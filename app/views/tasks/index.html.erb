@@ -1,0 +1,9 @@
+<div>
+  <ul class="tasks">
+    <% @tasks.each do |task| %>
+      <li data-task-id="<%= task.id %>" class="task <%= 'completed' if task.completed %>">
+        <%= task.name %>
+      </li>
+    <% end %>
+  </ul>
+</div>
